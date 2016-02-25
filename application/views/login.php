@@ -73,7 +73,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <div class="container text-center">  
   <?php
 	
-	echo form_open('Main/login_validation'); 					// DESCHIDE FORM-UL SPECIFIC CodeIgniter; ARGUMENT ESTE FUNCTIA LA CARE SE FOLOSESTE DIN MAIN
+	echo form_open('Logger/login_validation'); 					// DESCHIDE FORM-UL SPECIFIC CodeIgniter; ARGUMENT ESTE FUNCTIA LA CARE SE FOLOSESTE DIN MAIN
 																// correct form is ('CONTROLLER/FUNCTIONxMETHOD');
 	echo validation_errors();									// IN INTERIORUL FORMULUI
 	

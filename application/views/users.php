@@ -41,7 +41,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
   <?php
 	
-	echo form_open('Main/self_edit'); 					// DESCHIDE FORM-UL SPECIFIC CodeIgniter; ARGUMENT ESTE FUNCTIA LA CARE SE FOLOSESTE DIN MAIN
+	echo form_open('User/self_edit'); 					// DESCHIDE FORM-UL SPECIFIC CodeIgniter; ARGUMENT ESTE FUNCTIA LA CARE SE FOLOSESTE DIN MAIN / CONTROLLER 
 																// correct form is ('CONTROLLER/FUNCTIONxMETHOD');
 	echo validation_errors();									// IN INTERIORUL FORMULUI
 	
