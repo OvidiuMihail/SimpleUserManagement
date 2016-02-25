@@ -30,6 +30,11 @@ class Main extends CI_Controller
 	}
 	
 	
+	public function reset_email () 									// LOAD ADMINS VIEW
+	{
+		$this->load->view('reset');
+	}
+	
 	
 	
 	
@@ -88,23 +93,42 @@ class Main extends CI_Controller
 	
 															// ZONA TESTING
 															
-															
-															
+													
+
+				
 															
 	public function test()								
 	{
 		
-		$user_data = $this->model_users->user_data('user');
-		$user_data = json_encode($user_data); 
-		$user_data_array = json_decode($user_data, true); // TRUE MEANS CA E ASSOCIATIVE ARRAY CE SCOT
+		// $user_data = $this->model_users->user_data('user');
+		// $user_data = json_encode($user_data); 
+		// $user_data_array = json_decode($user_data, true); // TRUE MEANS CA E ASSOCIATIVE ARRAY CE SCOT
 	
 		
-		echo $user_data_array['nume_buletin'];
+		//echo $user_data_array['nume_buletin'];
 		
 	
+		// $this->load->library('email');
+		// $this->load->helper('string');
 		
+		// $reset_email = $this->input->post("reset_email");
+		
+		// $password= random_string('alnum', 20);	
+		
+		// $this->db->where('email', $users->email);
+		// $this->db->update('users',array('password'=>MD5($password)));
+			
+
+
+		// mail($reset_email,"PASSWORD RESET",$password);
 	
-	//	echo ;
+// if(mail($reset_email,"PASSWORD RESET",$password)){echo "da";};
+	
+
+	
+	
+	
+	
 	
 	}
 		

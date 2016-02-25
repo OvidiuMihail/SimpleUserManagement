@@ -35,8 +35,6 @@ class Model_users extends CI_Model
 		$this->db->where('nume', $nume);
 		$this->db->update('users', $new);
 		
-
-
 	}
 	
 	
@@ -46,6 +44,12 @@ class Model_users extends CI_Model
 	{
 		$query = $this->db->query("UPDATE `users` SET `id_age` = '$age' WHERE `users`.`nume` = '$nume';");
 	}
+	
+	public function reset_email($email, $password)
+	{
+		$query = $this->db->query("UPDATE `users` SET `parola` = '$password' WHERE `users`.`email` = '$email';");
+	}
+	
 	
 	
 	

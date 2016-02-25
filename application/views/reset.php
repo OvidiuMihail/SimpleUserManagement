@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>LOGIN</title>
+  <title>RESET EMAIL</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -32,9 +32,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
  
+ 
 <header class="container-fluid text-center">    
-  <h1>Login</h1><br>
+  <h1>RESET EMAIL</h1><br>
 </header>
+
+
 <div class "container text-center">
 <h1> </h1>
 <h1> </h1>
@@ -42,39 +45,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <div class="container text-center">  
   <?php
 	
-	echo form_open('Logger/login_validation'); 					// DESCHIDE FORM-UL SPECIFIC CodeIgniter; ARGUMENT ESTE FUNCTIA LA CARE SE FOLOSESTE DIN MAIN
+	echo form_open('Reset/execute'); 					// DESCHIDE FORM-UL SPECIFIC CodeIgniter; ARGUMENT ESTE FUNCTIA LA CARE SE FOLOSESTE DIN MAIN
 																// correct form is ('CONTROLLER/FUNCTIONxMETHOD');
 	echo validation_errors();									// IN INTERIORUL FORMULUI
 	
 ?>
-	
+
     <div class="row">
     <div class="col-sm-4">
     <div class="well">
 	<?php
-		echo "<p>Username: ";
-		echo form_input('username');								// ASA PRELUAM IN POST NUME 
+		echo "<p>INTRODU EMAIL AICI: ";
+		echo form_input('reset_email');								// ASA PRELUAM IN POST NUME 
 		echo "</p>";
-	?>
-      </div>
-      <div class="well">
-    <?php 
-		echo "<p>Parola: ";
-		echo form_password('password');								// ASA PRELUAM PAROLA
-		echo "</p>";	
 	?>
       </div>
 	    <?php 
  	
 		echo "<p>";
-		echo form_submit('login_submit', 'SUBMIT', "class='btn-lg btn-success'");					// EFECTUARE SUBMIT CLASS = e ala de CSS / BOOTSTRAP
+		echo form_submit('reset_submit', 'RESET', "class='btn-lg btn-success'");					// EFECTUARE SUBMIT CLASS = e ala de CSS / BOOTSTRAP
 		echo "</p>";
 	?>
    
-    </div>
-	
-	
-
+    </div>	
    <div class="col-sm-4">
 		<h1>CLOUD BUSINESS SERVICES</h1>
     </div>
@@ -84,11 +77,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 
   </div>
-</div><br><br><br><br><br><br><br><br><br><br>
+</div>
 
-<footer class="container-fluid text-center">
-<h2 class="text-center"><a class="text-muted" href="<?php echo base_url('Main/reset_email')?>">RESET PASSWORD </a></h2>
-</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
